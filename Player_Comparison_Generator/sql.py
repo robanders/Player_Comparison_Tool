@@ -63,6 +63,20 @@ def data_entry():
     c.execute('INSERT INTO per40_comps VALUES("Rashad McCants","6-4",207,"2002-03","UNC","ACC",35,1046,8.2,16.7,.491,5.5,10.1,.542,2.8,6.7,.414,3.5,5.0,.697,6.2,2.0,1.9,0.7,NULL,NULL,22.7)')
     c.execute('INSERT INTO per40_comps VALUES("Rashad McCants","6-4",207,"2003-04","UNC","ACC",30,961,9.0,18.8,.479,5.7,10.8,.531,3.2,8.0,.408,3.7,5.0,.748,5.7,2.7,2.2,0.8,NULL,NULL,24.9)')
     c.execute('INSERT INTO per40_comps VALUES("Rashad McCants","6-4",207,"2004-05","UNC","ACC",33,856,8.6,17.5,.489,5.2,9.6,.544,3.3,7.9,.423,4.3,5.9,.722,4.6,4.1,2.0,1.0,NULL,NULL,24.7)')
+    c.execute('INSERT INTO per40_comps VALUES("Antoine Wright","6-7",210,"2002-03","Texas A&M","Big 12",28,889,6.5,17.8,.364,3.6,10.4,.351,2.8,7.4,.382,2.5,4.0,.611,8.4,2.2,1.6,0.9,NULL,NULL,18.3)')
+    c.execute('INSERT INTO per40_comps VALUES("Antoine Wright","6-7",210,"2003-04","Texas A&M","Big 12",28,852,6.1,16.6,.368,3.9,9.2,.426,2.2,7.4,.297,3.4,5.4,.626,5.4,3.1,1.1,0.4,NULL,NULL,17.8)')
+    c.execute('INSERT INTO per40_comps VALUES("Antoine Wright","6-7",210,"2004-05","Texas A&M","Big 12",31,1052,7.3,14.6,.501,4.6,8.6,.540,2.7,6.0,.447,3.7,5.3,.691,7.0,2.6,1.4,0.8,NULL,NULL,21.0)')
+    c.execute('INSERT INTO per40_comps VALUES("Joey Graham","6-7",225,"2000-01","UCF","A-Sun",31,632,5.8,12.2,.474,5.1,8.9,.571,0.7,3.3,.212,4.4,5.2,.841,7.4,2.1,1.7,0.4,NULL,NULL,16.6)')
+    c.execute('INSERT INTO per40_comps VALUES("Joey Graham","6-7",225,"2001-02","UCF","A-Sun",29,832,6.4,12.6,.510,5.5,10.1,.540,1.0,2.5,.385,4.7,6.2,.766,7.8,3.4,1.0,0.7,NULL,NULL,18.6)')
+    c.execute('INSERT INTO per40_comps VALUES("Joey Graham","6-7",225,"2001-02","Oklahoma State","Big 12",35,864,7.9,13.8,.576,7.3,12.4,.586,0.6,1.3,.483,3.6,5.1,.709,8.5,1.9,1.1,0.3,NULL,NULL,20.1)')
+    c.execute('INSERT INTO per40_comps VALUES("Joey Graham","6-7",225,"2001-02","Oklahoma State","Big 12",33,1009,8.0,15.1,.529,6.9,12.9,.538,1.0,2.2,.473,6.2,7.0,.887,8.1,2.7,1.2,0.2,NULL,NULL,23.2)')
+    c.execute('INSERT INTO per40_comps VALUES("Danny Granger","6-8",225,"2001-02","Bradley","MVC",29,712,6.2,14.0,.446,6.1,13.0,.466,0.2,1.0,.176,5.5,7.0,.790,11.6,1.2,2.1,3.9,NULL,NULL,18.1)')
+    c.execute('INSERT INTO per40_comps VALUES("Danny Granger","6-8",225,"2002-03","Bradley","MVC",14,380,10.4,20.1,.518,9.8,18.0,.544,0.6,2.1,.300,6.8,10.0,.684,11.7,1.7,2.0,2.0,NULL,NULL,28.3)')
+    c.execute('INSERT INTO per40_comps VALUES("Danny Granger","6-8",225,"2003-04","New Mexico","MWC",22,703,7.7,15.8,.491,6.4,11.7,.546,1.4,4.1,.333,7.6,10.0,.760,11.2,2.6,1.7,1.8,NULL,NULL,24.4)')
+    c.execute('INSERT INTO per40_comps VALUES("Danny Granger","6-8",225,"2004-05","New Mexico","MWC",30,900,8.1,15.5,.524,6.1,10.9,.563,2.0,4.6,.433,6.8,9.1,.755,11.8,3.2,2.8,2.7,NULL,NULL,25.1)')
+
+
+
 
     conn.commit()
     #c.execute('INSERT INTO advanced_comps VALUES("Andrew Bogut", 7.1)')
