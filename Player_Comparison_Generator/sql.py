@@ -85,11 +85,7 @@ def data_entry():
 def read_from_db():
     c.execute('SELECT * FROM per40_comps')
     data_list = []
-    tag = []
     for row in c.fetchall():
-        #tag = row[0:6] #used to identify player and season
-        #data = row[6:]
-        #data = row[:]
         data_list.append(row)
     return data_list
 
