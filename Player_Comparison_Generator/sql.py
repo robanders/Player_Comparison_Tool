@@ -72,6 +72,10 @@ def data_entry():
     c.execute('INSERT INTO per40_comps VALUES("Danny Granger","6-8",225,"2002-03","Bradley","MVC",14,380,10.4,20.1,.518,9.8,18.0,.544,0.6,2.1,.300,6.8,10.0,.684,11.7,1.7,2.0,2.0,28.3)')
     c.execute('INSERT INTO per40_comps VALUES("Danny Granger","6-8",225,"2003-04","New Mexico","MWC",22,703,7.7,15.8,.491,6.4,11.7,.546,1.4,4.1,.333,7.6,10.0,.760,11.2,2.6,1.7,1.8,24.4)')
     c.execute('INSERT INTO per40_comps VALUES("Danny Granger","6-8",225,"2004-05","New Mexico","MWC",30,900,8.1,15.5,.524,6.1,10.9,.563,2.0,4.6,.433,6.8,9.1,.755,11.8,3.2,2.8,2.7,25.1)')
+    c.execute('INSERT INTO per40_comps VALUES("Hakim Warrick","6-9",219,"2001-02","Syracuse","Big East",35,609,6.2,11.3,.552,6.2,11.2,.553,0.1,0.1,.500,1.5,3.9,.383,11.0,1.2,1.3,1.4,14.1)')
+    c.execute('INSERT INTO per40_comps VALUES("Hakim Warrick","6-9",219,"2001-02","Syracuse","Big East",35,1146,6.9,12.7,.541,6.9,12.7,.543,0.0,0.0,.000,4.3,6.5,.667,10.4,2.0,1.7,1.5,18.1)')
+    c.execute('INSERT INTO per40_comps VALUES("Hakim Warrick","6-9",219,"2001-02","Syracuse","Big East",31,1156,7.7,15.0,.512,7.7,14.8,.519,0.0,0.2,.000,5.9,8.5,.692,9.2,2.8,1.0,1.2,21.3)')
+    c.execute('INSERT INTO per40_comps VALUES("Hakim Warrick","6-9",219,"2001-02","Syracuse","Big East",34,1275,7.9,14.5,.548,7.7,13.5,.566,0.3,1.0,.290,6.6,9.7,.681,9.2,1.6,1.0,0.8,22.8)')
 
 
 
