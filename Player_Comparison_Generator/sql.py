@@ -93,10 +93,25 @@ def read_from_db():
         data_list.append(row)
     return data_list
 
+def printDB():
+    try:
+        result = c.execute('SELECT * FROM per40_comps')
+        for row in result:
+            print('Name: ', row[0], 'Height: ', row[1], 'Weight: ', row[2], 'Season: ', row[3], 'School: ', row[4],
+                  'Conference: ', row[5], 'Games: ', row[6], 'Minutes: ', row[7], 'FG: ', row[8],
+                  'FGA: ', row[9], 'FG%: ', row[10], '2P: ', row[11], '2PA: ', row[12], '2P%: ', row[13],
+                  '3P: ', row[14], '3PA: ', row[15], '3P%: ', row[16], 'FT: ', row[17], 'FTA: ', row[18],
+                  'FT%: ', row[19], 'TRB: ', row[20], 'AST: ', row[21], 'STL: ', row[22], 'BLK: ', row[23],
+                  'PTS: ', row[24]
+                  )
+
+    except sqlite3.OperationalError:
+        print "Error printing the DB"
 
 create_tables()
 data_entry()
 read_from_db()
+#printDB()
 
 #c.close()
 #conn.close()
