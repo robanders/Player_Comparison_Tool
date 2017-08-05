@@ -86,12 +86,72 @@ def data_entry():
     #c.close()
     #conn.close()
 
+class Player:
+    __name = ""
+    __height = 0
+    __weight = 0
+    __season = ""
+    __school = ""
+    __conf = ""
+    __gp = 0
+    __mp = 0
+    __fg = 0
+    __fga = 0
+    __fgp = 0
+    __two_p = 0
+    __two_pa = 0
+    __two_pp = 0
+    __three_p = 0
+    __three_pa = 0
+    __three_pp = 0
+    __ft = 0
+    __fta = 0
+    __ftp = 0
+    __trb = 0
+    __ast = 0
+    __stl = 0
+    __blk = 0
+    __pts = 0
+
+    def __init__(self, name, height, weight, season, school, conf, gp, mp, fg, fga, fgp, two_p, two_pa, two_pp, three_p, three_pa, three_pp, ft, fta, ftp, trb, ast, stl, blk, pts):
+        self.__name = name
+        self.__height = height
+        self.__weight = weight
+        self.__season = season
+        self.__school = school
+        self.__conf = conf
+        self.__gp = gp
+        self.__mp = mp
+        self.__fg = fg
+        self.__fga = fga
+        self.__fgp = fgp
+        self.__two_p = two_p
+        self.__two_pa = two_pa
+        self.__two_pp = two_pp
+        self.__three_p = three_p
+        self.__three_pa = three_pa
+        self.__three_pp = three_pp
+        self.__ft = ft
+        self.__fta = fta
+        self.__ftp = ftp
+        self.__trb = trb
+        self.__ast = ast
+        self.__stl = stl
+        self.__blk = blk
+        self.__pts = pts
+
+    def print_player(self):
+        print(self.__name, self.__season, self.__pts)
+
+
+
 def read_from_db():
     c.execute('SELECT * FROM per40_comps')
-    data_list = []
+    player_list = []
     for row in c.fetchall():
-        data_list.append(row)
-    return data_list
+        cat = Player(row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7],row[8],row[9],row[10],row[11],row[12],row[13],row[14],row[15],row[16],row[17],row[18],row[19],row[20],row[21],row[22],row[23],row[24])
+        player_list.append(cat)
+    return player_list
 
 def printDB():
     try:
@@ -110,7 +170,11 @@ def printDB():
 
 create_tables()
 data_entry()
-read_from_db()
+players = read_from_db()
+
+for a in players:
+    a.print_player()
+
 #printDB()
 
 #c.close()
