@@ -17,8 +17,18 @@ def main():
         sorted_score_list = sorted(score_list)
     print sorted_score_list[::-1] #possible scope issue here & sliced to return the reverse of the sorted list
                                   #so that the highest similarity scores appear first
+    #interpret_results(sorted_score_list[::-1], data, test_data2)
+
 
     sql.c.close()
     sql.conn.close()
 
+def interpret_results(sorted_score_list, data, test_data):
+    print "sorted score list: ", sorted_score_list
+    print "data: ", data
+    print "test data: ", test_data
+    return None
+
 main()
+
+#want to return a list of the top results along with what season/player the result came from
